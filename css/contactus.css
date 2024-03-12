@@ -1,0 +1,102 @@
+
+@import '_variables.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontDefault);
+    background-color: var(--colorSecondary);
+}
+
+header {
+    background-color: var(--colorBanner);
+    color: var(--colorSecondary);
+    padding: 10px;
+}
+
+nav ul li {
+    display: block;
+    margin-right: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content {
+    margin-bottom: 10px;
+}
+
+.menu {
+    background-color: var(--colorBgSecondary);
+}
+
+nav ul li a {
+    color: var(--colorSecondary);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--menuColor);
+}
+
+footer {
+    background-color: var(--colorBgSecondary);
+    color: var(--colorSecondary);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+article {
+    flex: 1;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: black;
+    padding: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+
+section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: black;
+    padding: 10px;
+}
+
+

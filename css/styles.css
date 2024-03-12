@@ -1,0 +1,121 @@
+@import '_variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontDefault);
+    background-color: var(--colorSecondary);
+}
+
+header {
+    background-color: var(--colorBanner);
+    color: var(--colorSecondary);
+    padding: 10px;
+}
+
+nav ul li {
+    display: block;
+    margin-right: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu {
+    background-color: var(--colorBgSecondary);
+}
+
+.list {
+    color: var(--colorBanner);
+    list-style-type: none;
+    font-family: var(--fontDefault);
+}
+
+nav ul li a {
+    color: var(--colorSecondary);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--menuColor);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px; 
+    margin-bottom: 50px;
+}
+
+.text-container {
+    flex: 1 1 100%; 
+    padding: 20px;
+}
+
+.image-container {
+    flex: 1 1 100%; 
+    padding: 10px;
+    order: -1; 
+}
+
+.text {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.text2 {
+    margin-left: 18px;
+    margin-right: 10px;
+    background-color: lightgrey;
+    padding: 25px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 2px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: var(--colorBgSecondary);
+    color: var(--colorSecondary);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (min-width: 600px) {
+    main {
+        padding: 0 80px;
+    }
+
+    .text-container {
+        flex: 1 1 70%;
+    }
+
+    .image-container {
+        flex: 1 1 30%;
+        order: 0; 
+    }
+    nav ul li{
+    display: inline;
+    margin-left: 12px;
+
+    
+    
+    
+    
+}
+nav{
+    padding-top:20px;
+    
+}
+}
